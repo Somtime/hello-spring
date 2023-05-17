@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <!-- label 태그는 for 속성을 사용해서 input 태그의 id 속성에 연계해서 사용
+                 label의 for 값과 input의 id 값을 일치시키면 된다 -->
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요." />
+        </div>
+
+        <!-- 그냥 type="submit"로 안하고 button 태그만 해도 form 태그 내부에 있는 것이기 때문에 submit 된다 -->
+        <button type="submit">등록</button>
+    </form>
+</div>
+</body>
+</html>
